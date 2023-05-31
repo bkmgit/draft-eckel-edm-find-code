@@ -1170,6 +1170,14 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.3">
                 <p id="section-toc.1-1.3.2.3.1"><a href="#section-3.3" class="auto internal xref">3.3</a>.  <a href="#name-datatracker" class="internal xref">Datatracker</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.3.2.1">
+                    <p id="section-toc.1-1.3.2.3.2.1.1"><a href="#section-3.3.1" class="auto internal xref">3.3.1</a>.  <a href="#name-permissions" class="internal xref">Permissions</a></p>
+</li>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.3.2.2">
+                    <p id="section-toc.1-1.3.2.3.2.2.1"><a href="#section-3.3.2" class="auto internal xref">3.3.2</a>.  <a href="#name-guidance" class="internal xref">Guidance</a></p>
+</li>
+                </ul>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.4">
                 <p id="section-toc.1-1.3.2.4.1"><a href="#section-3.4" class="auto internal xref">3.4</a>.  <a href="#name-implementation-status-2" class="internal xref">Implementation Status</a></p>
@@ -1255,7 +1263,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         <h3 id="name-github-repository">
 <a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-github-repository" class="section-name selfRef">GitHub Repository</a>
         </h3>
-<p id="section-3.1-1">A <a href="https://docs.github.com/en/github/getting-started-with-github/quickstart/create-a-repo#create-a-repository">GitHub repository</a> should be setup for an I-D, as outlined in <a href="https://www.rfc-editor.org/rfc/rfc8874.html#section-3.2">Section 3.2 of RFC 8874</a>. The <a href="https://github.com/martinthomson/i-d-template">i-d-template</a> can be used to get started. It provides useful features, including integration with the Datatracker (see <a href="#datatracker" class="auto internal xref">Section 3.3</a>). The resulting repository should be associated with the I-D using the Datatracker <code>github_repo</code> tag. This should be done even if GitHub is not to be used to collaborate on the I-D.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
+<p id="section-3.1-1">A <a href="https://docs.github.com/en/github/getting-started-with-github/quickstart/create-a-repo#create-a-repository">GitHub repository</a> should be setup for an I-D, as outlined in <a href="https://www.rfc-editor.org/rfc/rfc8874.html#section-3.2">Section 3.2 of RFC 8874</a>. The <a href="https://github.com/martinthomson/i-d-template">i-d-template</a> can be used to get started. It provides useful features, including integration with the Datatracker (see <a href="#datatracker" class="auto internal xref">Section 3.3</a>). The resulting repository should be associated with the I-D using the Datatracker <code>github_repo</code> tag. This may be done even if GitHub is not to be used to collaborate on the I-D.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
 <p id="section-3.1-2">A GitHub repository typically exists within a <a href="https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations">GitHub organization</a>. This is not always the case (e.g., a repository in a personal GitHub account), and even when it is, the GitHub organization may not be appropriate to associated with the I-D. In the event there is an appropriate GitHub organization, it should be associated with the I-D using the Datatracker <code>github_org</code> tag. Examples of such GitHub organizations are:<a href="#section-3.1-2" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-3.1-3.1">
@@ -1283,8 +1291,34 @@ svg :is([fill="white"], [fill^="#fff"]) {
         <h3 id="name-datatracker">
 <a href="#section-3.3" class="section-number selfRef">3.3. </a><a href="#name-datatracker" class="section-name selfRef">Datatracker</a>
         </h3>
-<p id="section-3.3-1">The IETF <a href="https://datatracker.ietf.org/">Datatracker</a> supports the association of <code>Additional Resources</code> with a <code>Document</code> (e.g., an I-D or RFC) or a <code>Group</code> (e.g., <a href="https://datatracker.ietf.org/wg/">working group</a>, <a href="https://datatracker.ietf.org/rg/">research group</a>). An <code>Additional Resource</code> can be, among others things, a GitHub organization or a GitHub repository.<a href="#section-3.3-1" class="pilcrow">¶</a></p>
-<p id="section-3.3-2">It is recommended that this Datatracker mechanism be used to associate an appropriate GitHub organization and repository with an I-D. Ideally the organization and repository are setup per the guidelines in <span>[<a href="#RFC8874" class="cite xref">RFC8874</a>]</span> and <span>[<a href="#RFC8875" class="cite xref">RFC8875</a>]</span>. In the event the working group or research group is not using GitHub, or the I-D has not yet been adopted by the group, another GitHub organization or repository may be used instead. A GitHub organization is associated with the I-D using the <code>github_org</code> tag. A GitHub repository is associated with the I-D using the <code>github_repo</code> tag.<a href="#section-3.3-2" class="pilcrow">¶</a></p>
+<p id="section-3.3-1">The IETF <a href="https://datatracker.ietf.org/">Datatracker</a> supports the association of <code>Additional Resources</code> with a <code>Document</code> (e.g., an I-D or RFC) or a <code>Group</code> (e.g., <a href="https://datatracker.ietf.org/wg/">working group</a>, <a href="https://datatracker.ietf.org/rg/">research group</a>). An <code>Additional Resource</code> can be, among others things, a GitHub organization, GitHub repository, or code associated with an I-D or RFC.<a href="#section-3.3-1" class="pilcrow">¶</a></p>
+<p id="section-3.3-2">It is recommended that this Datatracker mechanism be used to associate an appropriate GitHub organization and repository with an I-D. Ideally the organization and repository are setup per the guidelines in <span>[<a href="#RFC8874" class="cite xref">RFC8874</a>]</span> and <span>[<a href="#RFC8875" class="cite xref">RFC8875</a>]</span>. In the event the working group or research group is not using GitHub, or the I-D has not yet been adopted by the group, another GitHub organization or repository may be used instead. A GitHub organization is associated with an I-D using the <code>github_org</code> tag. A GitHub repository is associated with an I-D using the <code>github_repo</code> tag.<a href="#section-3.3-2" class="pilcrow">¶</a></p>
+<p id="section-3.3-3">It is also recommended that this Datatracker mechanism be used to associate code with an I-D. Code can be associated with an I-D using the <code>related_implementations</code> tag.<a href="#section-3.3-3" class="pilcrow">¶</a></p>
+<div id="permissions">
+<section id="section-3.3.1">
+          <h4 id="name-permissions">
+<a href="#section-3.3.1" class="section-number selfRef">3.3.1. </a><a href="#name-permissions" class="section-name selfRef">Permissions</a>
+          </h4>
+<p id="section-3.3.1-1">The ability to associate <code>Additional Resources</code> with an I-D is limited to:<a href="#section-3.3.1-1" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-3.3.1-2.1">Authors of individual drafts<a href="#section-3.3.1-2.1" class="pilcrow">¶</a>
+</li>
+            <li class="normal" id="section-3.3.1-2.2">Working group chairs of working group drafts<a href="#section-3.3.1-2.2" class="pilcrow">¶</a>
+</li>
+            <li class="normal" id="section-3.3.1-2.3">Working group chairs of RFCs produced by that working group<a href="#section-3.3.1-2.3" class="pilcrow">¶</a>
+</li>
+          </ul>
+<p id="section-3.3.1-3">Additionally, changes can be requested by the secretariat via <a href="mailto:support@ietf.org">support@ietf.org</a>.<a href="#section-3.3.1-3" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="guidance">
+<section id="section-3.3.2">
+          <h4 id="name-guidance">
+<a href="#section-3.3.2" class="section-number selfRef">3.3.2. </a><a href="#name-guidance" class="section-name selfRef">Guidance</a>
+          </h4>
+<p id="section-3.3.2-1">TODO<a href="#section-3.3.2-1" class="pilcrow">¶</a></p>
+</section>
+</div>
 </section>
 </div>
 <div id="implementation-status-1">
@@ -1393,7 +1427,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <p id="appendix-A-4">Spencer Dawkins pointed out the RFC editor's ability to <a href="https://mailarchive.ietf.org/arch/msg/edm/ku3cd5xTla7tbtohVYWWW7-XTIg/">inline errata</a> and noted that something similar could be done to point to code.<a href="#appendix-A-4" class="pilcrow">¶</a></p>
 <p id="appendix-A-5">Adam Roach played in important role in enabling the RFC editor's ability to <a href="https://mailarchive.ietf.org/arch/msg/edm/ku3cd5xTla7tbtohVYWWW7-XTIg/">inline errata</a>.<a href="#appendix-A-5" class="pilcrow">¶</a></p>
 <p id="appendix-A-6">Mark Nottingham provided illustrative example of how the <a href="https://github.com/quicwg/base-drafts/wiki/Implementations">QUIC</a> working group uses wiki pages to track early implementations.<a href="#appendix-A-6" class="pilcrow">¶</a></p>
-<p id="appendix-A-7">Yaron Sheffer highlighted limitations with the current errata process and the existance of the ICANN project for <a href="https://rfc-annotations.research.icann.org/">collaborative annotations</a> of RFCs related to DNS.<a href="#appendix-A-7" class="pilcrow">¶</a></p>
+<p id="appendix-A-7">Yaron Sheffer highlighted limitations with the current errata process and the existence of the ICANN project for <a href="https://rfc-annotations.research.icann.org/">collaborative annotations</a> of RFCs related to DNS.<a href="#appendix-A-7" class="pilcrow">¶</a></p>
 <p id="appendix-A-8">Many other people shared thoughts on the email lists for <a href="https://mailarchive.ietf.org/arch/browse/wgchairs/">WG Chairs</a> and <a href="https://mailarchive.ietf.org/arch/browse/edm/">EDM</a> about how to make it easier to find code. These helped shape the practices outlined in this document.<a href="#appendix-A-8" class="pilcrow">¶</a></p>
 </section>
 </div>

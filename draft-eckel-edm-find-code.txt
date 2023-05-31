@@ -72,6 +72,8 @@ Table of Contents
      3.1.  GitHub Repository
      3.2.  README
      3.3.  Datatracker
+       3.3.1.  Permissions
+       3.3.2.  Guidance
      3.4.  Implementation Status
      3.5.  Inline Errata
      3.6.  Known Limitations
@@ -177,8 +179,8 @@ Table of Contents
    used to get started.  It provides useful features, including
    integration with the Datatracker (see Section 3.3).  The resulting
    repository should be associated with the I-D using the Datatracker
-   github_repo tag.  This should be done even if GitHub is not to be
-   used to collaborate on the I-D.
+   github_repo tag.  This may be done even if GitHub is not to be used
+   to collaborate on the I-D.
 
    A GitHub repository typically exists within a GitHub organization
    (https://docs.github.com/en/organizations/collaborating-with-groups-
@@ -218,7 +220,8 @@ Table of Contents
    RFC) or a Group (e.g., working group (https://datatracker.ietf.org/
    wg/), research group (https://datatracker.ietf.org/rg/)).  An
    Additional Resource can be, among others things, a GitHub
-   organization or a GitHub repository.
+   organization, GitHub repository, or code associated with an I-D or
+   RFC.
 
    It is recommended that this Datatracker mechanism be used to
    associate an appropriate GitHub organization and repository with an
@@ -226,9 +229,31 @@ Table of Contents
    guidelines in [RFC8874] and [RFC8875].  In the event the working
    group or research group is not using GitHub, or the I-D has not yet
    been adopted by the group, another GitHub organization or repository
-   may be used instead.  A GitHub organization is associated with the
-   I-D using the github_org tag.  A GitHub repository is associated with
-   the I-D using the github_repo tag.
+   may be used instead.  A GitHub organization is associated with an I-D
+   using the github_org tag.  A GitHub repository is associated with an
+   I-D using the github_repo tag.
+
+   It is also recommended that this Datatracker mechanism be used to
+   associate code with an I-D.  Code can be associated with an I-D using
+   the related_implementations tag.
+
+3.3.1.  Permissions
+
+   The ability to associate Additional Resources with an I-D is limited
+   to:
+
+   *  Authors of individual drafts
+
+   *  Working group chairs of working group drafts
+
+   *  Working group chairs of RFCs produced by that working group
+
+   Additionally, changes can be requested by the secretariat via
+   support@ietf.org (mailto:support@ietf.org).
+
+3.3.2.  Guidance
+
+   TODO
 
 3.4.  Implementation Status
 
@@ -335,7 +360,7 @@ Acknowledgments
    group uses wiki pages to track early implementations.
 
    Yaron Sheffer highlighted limitations with the current errata process
-   and the existance of the ICANN project for collaborative annotations
+   and the existence of the ICANN project for collaborative annotations
    (https://rfc-annotations.research.icann.org/) of RFCs related to DNS.
 
    Many other people shared thoughts on the email lists for WG Chairs
