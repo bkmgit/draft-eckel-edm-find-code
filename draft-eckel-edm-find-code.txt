@@ -4,8 +4,8 @@
 
 edm                                                             C. Eckel
 Internet-Draft                                             Cisco Systems
-Intended status: Best Current Practice                     26 March 2023
-Expires: 27 September 2023
+Intended status: Best Current Practice                       31 May 2023
+Expires: 2 December 2023
 
 
              Find Code Related to an Internet-Draft or RFC
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 27 September 2023.
+   This Internet-Draft will expire on 2 December 2023.
 
 Copyright Notice
 
