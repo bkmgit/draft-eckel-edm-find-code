@@ -9,21 +9,21 @@
 <meta content="
        Code related to existing IETF standards and ongoing standardization efforts may exist and be publicly accessible in many places. This document provides a set of practices to make it easier to identify and find such code. 
     " name="description">
-<meta content="xml2rfc 3.17.1" name="generator">
+<meta content="xml2rfc 3.17.3" name="generator">
 <meta content="Internet-Draft" name="keyword">
 <meta content="draft-eckel-edm-find-code-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.17.1
-    Python 3.11.3
+  xml2rfc 3.17.3
+    Python 3.11.4
     appdirs 1.4.4
     ConfigArgParse 1.5.3
-    google-i18n-address 2.5.2
+    google-i18n-address 3.1.0
     intervaltree 3.1.0
     Jinja2 3.1.2
     lxml 4.9.2
     pycountry 22.3.5
     PyYAML 6.0
-    requests 2.30.0
+    requests 2.31.0
     setuptools 67.7.2
     six 1.16.0
     wcwidth 0.2.6
@@ -608,6 +608,7 @@ sub, sup {
   clear: left;
   float: left;
   text-align: right;
+  margin-right: 1ch;
 }
 #identifiers dd {
   margin: 0;
@@ -1050,7 +1051,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Eckel</td>
-<td class="center">Expires 3 December 2023</td>
+<td class="center">Expires 28 December 2023</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1063,12 +1064,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-eckel-edm-find-code-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2023-06-01" class="published">1 June 2023</time>
+<time datetime="2023-06-26" class="published">26 June 2023</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Best Current Practice</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2023-12-03">3 December 2023</time></dd>
+<dd class="expires"><time datetime="2023-12-28">28 December 2023</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
@@ -1113,7 +1114,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 3 December 2023.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 28 December 2023.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1291,7 +1292,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         <h3 id="name-datatracker">
 <a href="#section-3.3" class="section-number selfRef">3.3. </a><a href="#name-datatracker" class="section-name selfRef">Datatracker</a>
         </h3>
-<p id="section-3.3-1">The IETF <a href="https://datatracker.ietf.org/">Datatracker</a> supports the association of <code>Additional Resources</code> with a <code>Document</code> (e.g., an I-D or RFC) or a <code>Group</code> (e.g., <a href="https://datatracker.ietf.org/wg/">working group</a>, <a href="https://datatracker.ietf.org/rg/">research group</a>). An <code>Additional Resource</code> can be, among others things, a GitHub organization, GitHub repository, or code associated with an I-D or RFC.<a href="#section-3.3-1" class="pilcrow">¶</a></p>
+<p id="section-3.3-1">The IETF <a href="https://datatracker.ietf.org/">Datatracker</a> supports the association of <code>Additional Resources</code> with a <code>Document</code> (e.g., an I-D or RFC) or a <code>Group</code> (e.g., <a href="https://datatracker.ietf.org/wg/">working group</a>, <a href="https://datatracker.ietf.org/rg/">research group</a>). An <code>Additional Resource</code> can be, among other things, a GitHub organization, GitHub repository, or code associated with an I-D or RFC.<a href="#section-3.3-1" class="pilcrow">¶</a></p>
 <p id="section-3.3-2">It is recommended that this Datatracker mechanism be used to associate an appropriate GitHub organization and repository with an I-D. Ideally the organization and repository are setup per the guidelines in <span>[<a href="#RFC8874" class="cite xref">RFC8874</a>]</span> and <span>[<a href="#RFC8875" class="cite xref">RFC8875</a>]</span>. In the event the working group or research group is not using GitHub, or the I-D has not yet been adopted by the group, another GitHub organization or repository may be used instead. A GitHub organization is associated with an I-D using the <code>github_org</code> tag. A GitHub repository is associated with an I-D using the <code>github_repo</code> tag.<a href="#section-3.3-2" class="pilcrow">¶</a></p>
 <p id="section-3.3-3">It is also recommended that this Datatracker mechanism be used to associate code with an I-D. Code can be associated with an I-D using the <code>related_implementations</code> tag.<a href="#section-3.3-3" class="pilcrow">¶</a></p>
 <div id="permissions">

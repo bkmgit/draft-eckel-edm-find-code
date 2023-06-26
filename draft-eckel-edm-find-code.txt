@@ -4,8 +4,8 @@
 
 edm                                                             C. Eckel
 Internet-Draft                                             Cisco Systems
-Intended status: Best Current Practice                       1 June 2023
-Expires: 3 December 2023
+Intended status: Best Current Practice                      26 June 2023
+Expires: 28 December 2023
 
 
              Find Code Related to an Internet-Draft or RFC
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 3 December 2023.
+   This Internet-Draft will expire on 28 December 2023.
 
 Copyright Notice
 
@@ -219,7 +219,7 @@ Table of Contents
    association of Additional Resources with a Document (e.g., an I-D or
    RFC) or a Group (e.g., working group (https://datatracker.ietf.org/
    wg/), research group (https://datatracker.ietf.org/rg/)).  An
-   Additional Resource can be, among others things, a GitHub
+   Additional Resource can be, among other things, a GitHub
    organization, GitHub repository, or code associated with an I-D or
    RFC.
 
